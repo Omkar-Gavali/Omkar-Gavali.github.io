@@ -69,5 +69,39 @@ body {
 .cta-button:hover {
     background-color: #555;
 }
+/* Add these styles to your existing styles.css */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Adjust the width to your desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Add these styles to your existing styles.css */
+
+.about {
+    background-color: #E8F5FD; /* Light blue background color */
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333; /* Dark text color */
+}
+
+.about p {
+    font-size: 1.1rem;
+    color: #555; /* Slightly darker text color */
+}
 
 /* Add more styles for other sections as needed */
