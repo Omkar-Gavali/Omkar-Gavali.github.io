@@ -2,7 +2,8 @@
 <html>
 <head>
   <title>Omkar's Space</title>
-  <style>
+ 
+    <style>
     body {
       display: flex;
       justify-content: center;
@@ -15,18 +16,27 @@
     h1 {
       font-size: 36px;
       animation: flash 2s infinite;
+      transition: transform 0.2s;
+      cursor: pointer;
     }
 
     @keyframes flash {
       0% {
         color: red;
+        transform: scale(1);
       }
       50% {
         color: blue;
+        transform: scale(1.2);
       }
       100% {
         color: red;
+        transform: scale(1);
       }
+    }
+
+    h1:hover {
+      transform: rotate(360deg);
     }
   </style>
 </head>
