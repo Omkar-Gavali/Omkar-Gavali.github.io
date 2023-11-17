@@ -327,10 +327,12 @@ svg {
   }
   .home__data,
   .about__data,
-  .skills__data 
-  :is(.about__data,.skills__data) is(.section__subtitle, .section__title) {
-    text-align: initial;
-  }
+  .skills__data {
+    :is(.about__data, .skills__data) :is(.section__subtitle, .section__title) {
+      text-align: initial;
+    }
+  
+    }
 
    .home__social{
     justify-content: initial;
