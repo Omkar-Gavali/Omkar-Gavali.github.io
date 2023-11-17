@@ -162,9 +162,10 @@ svg {
   padding-block: 1rem 2rem;
   background-color: var(--container-color);
   z-index: var(--z-fixed);
-  transition: .3s;
+  
 }
 .nav {
+  height: var(--header-height);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -180,24 +181,21 @@ svg {
   color: var(--first-color);
 }
 
-.nav__toggle {
+.nav__toggle,/* {
   font-size: 1.5rem;
   color: var(--title-color);
   cursor: pointer;
-}
+}*
 /*.nav__toggle:hover {
   color: var(--first-color);
 }*/
 .nav__close {
-  position: absolute;
-  top: 1.5rem;
-  right: 2rem;
-  font-size: 1.5rem;
+  display: flex;
+  font-size: 1.25rem;
+
   color: var(--title-color);
   cursor: pointer;
-  opacity: 0;
-  pointer-events: none;
-  transition: .3s;
+  
 }
 
 /* Navigation for mobile devices */
